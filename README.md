@@ -10,7 +10,16 @@
 
 This repository contains data and scripts for analyzing Project-123. 
 
-Any data accompanying this project can be stored in the `data/` directory, while any scripts used to process the data can be stored in the `scripts/` directory. By default, any data or files added to the `data/` directory are ignored by git, so you can store large files or data here without worrying about them being uploaded to Github.
+Any data accompanying this project can be stored in the `data/` directory, while any scripts used to process the data can be stored in the `scripts/` directory.
+
+> [!NOTE]  
+> _**By default**, any data or files added to the `data/` directory are ignored by git due to our `.gitignore`, so you can store large files or data here without worrying about them being uploaded to Github._ If you would to upload a small data file (<5MB) to Github, you can stage the file using force, `-f`, option to the `git add`:  
+> ```bash
+> # Stage file for commit
+> git add -f data/counts.tsv
+> # Commit the file to history
+> git commit -m "Adding small counts matrix"
+> ```
 
 <!--
 Please add some more information about the project here. This can be copied directly from the project description. Also please update any references to IC-123 to the correct project identifer. For example: NCBR-123, NHLBI-123, NIAMS-123, etc. 

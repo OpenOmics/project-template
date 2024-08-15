@@ -8,7 +8,7 @@
 
 # Overview
 
-This repository contains data and scripts for analyzing Project-123. 
+This repository contains data and scripts for analyzing IC-123. 
 
 Any data accompanying this project can be stored in the `data/` directory, while any scripts used to process the data can be stored in the `scripts/` directory.
 
